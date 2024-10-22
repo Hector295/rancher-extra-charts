@@ -1,0 +1,39 @@
+apiVersion: v2
+annotations:
+  catalog.cattle.io/certified: partner
+  catalog.cattle.io/display-name: OpenEBS
+  catalog.cattle.io/release-name: openebs
+appVersion: 4.1.1
+dependencies:
+- name: openebs-crds
+  repository: ""
+  version: 4.1.1
+- name: localpv-provisioner
+  repository: https://openebs.github.io/dynamic-localpv-provisioner
+  version: 4.1.1
+- condition: engines.local.zfs.enabled
+  name: zfs-localpv
+  repository: https://openebs.github.io/zfs-localpv
+  version: 2.6.2
+- condition: engines.local.lvm.enabled
+  name: lvm-localpv
+  repository: https://openebs.github.io/lvm-localpv
+  version: 1.6.2
+- condition: engines.replicated.mayastor.enabled
+  name: mayastor
+  repository: https://openebs.github.io/mayastor-extensions
+  version: 2.7.1
+description: Containerized Attached Storage for Kubernetes
+home: https://www.openebs.io/
+icon: https://d7umqicpi7263.cloudfront.net/img/product/0b352c0d-256c-43e0-8e95-b48d3d62a449.png
+keywords:
+- cloud-native-storage
+- block-storage
+- local-storage
+- NVMe
+- storage
+- kubernetes
+name: openebs
+sources:
+- https://github.com/openebs/openebs
+version: 4.1.1
