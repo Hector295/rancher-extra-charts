@@ -2,7 +2,7 @@ annotations:
   catalog.cattle.io/display-name: wordpress
   catalog.cattle.io/kube-version: '>=1.22.0-0'
   catalog.cattle.io/release-name: wordpress
-  catalog.cattle.io/namespace: default
+  catalog.cattle.io/namespace: wordpress
   category: CMS
   images: |
     - name: apache-exporter
