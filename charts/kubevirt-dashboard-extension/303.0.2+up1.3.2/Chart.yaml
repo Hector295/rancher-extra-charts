@@ -10,13 +10,13 @@ annotations:
   catalog.cattle.io/ui-component: plugins
   catalog.cattle.io/ui-extensions-version: '>= 3.0.0 < 4.0.0'
 apiVersion: v2
-appVersion: 0.1.0
+appVersion: 0.1.1
 description: Extension server
 name: extension-server
 type: application
 keywords:
   - applications
   - infrastructure
-version: 0.1.0
+version: 0.1.1
 icon: https://docs.ranchermanager.rancher.io/img/rancher-logo-horiz-color.svg
 home: https://rancher.com
