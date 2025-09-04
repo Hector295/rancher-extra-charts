@@ -10,13 +10,10 @@ annotations:
   catalog.cattle.io/ui-extensions-version: '>= 3.0.2 < 4.0.0'
   catalog.cattle.io/kube-version: '>= v1.26.0-0'
 apiVersion: v2
-appVersion: 0.1.0
-description: Extension server
-name: extension-server
+appVersion: 303.0.2+up1.3.2
+description: 'SUSE Edge: KubeVirt extension for Rancher Dashboard'
+name: kubevirt-dashboard-extension
 type: application
-keywords:
-  - applications
-  - infrastructure
-version: 0.1.0
-icon: https://docs.ranchermanager.rancher.io/img/rancher-logo-horiz-color.svg
-home: https://rancher.com
+version: 303.0.2+up1.3.2
+icon: >-
+  https://raw.githubusercontent.com/cncf/artwork/master/projects/kubevirt/icon/color/kubevirt-icon-color.svg
